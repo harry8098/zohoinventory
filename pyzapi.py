@@ -79,7 +79,7 @@ def retrieveAuthtoken(email):
 
 ##  Retrieves organizations from inventory.zoho.com
 def retrieveOrganizations(authtoken):
-    print (__name__ + ": Retrieving organizations for <"+email+">...")
+    print (__name__ + ": Retrieving organizations...")
     params = {'authtoken': authtoken};
     data = _pyzapiRequest("inventory.zoho.com", "GET", "/api/v1/organizations", params)
     print (__name__ + ": successfully retrieved organizations data!")
